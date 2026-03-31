@@ -1,3 +1,5 @@
+import sys
+
 from stats import (
     convert_dict_to_list,
     get_num_of_chars,
@@ -12,12 +14,15 @@ def get_book_text(path):
 
 
 def main():
-    frankenstein_path = "books/frankenstein.txt"
-    text = get_book_text(frankenstein_path)
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+    path = sys.argv[1]
+    text = get_book_text(path)
     num_words = get_num_of_words(text)
     num_chars = get_num_of_chars(text)
     list = convert_dict_to_list(num_chars)
-    print_stats(frankenstein_path, num_words, list)
+    print_stats(path, num_words, list)
 
 
 main()
