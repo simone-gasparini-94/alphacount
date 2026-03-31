@@ -1,3 +1,3 @@
-# bookbot
+# alphacount
 
-BookBot is my first [Boot.dev](https://www.boot.dev) project!
+Command-line tool that displays the frequency breakdown of every alphabetical character, sorted in descending order.
