@@ -21,7 +21,6 @@ def convert_dict_to_list(dict):
     list = []
     for key in dict:
         list.append({key: dict[key]})
-        print({key: dict[key]})
         list.sort(reverse=True, key=sort_on)
     return list
 
