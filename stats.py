@@ -11,3 +11,28 @@ def get_num_of_chars(string):
             continue
         chars[lower_case] += 1
     return chars
+
+
+def sort_on(items):
+    return list(items.values())[0]
+
+
+def convert_dict_to_list(dict):
+    list = []
+    for key in dict:
+        list.append({key: dict[key]})
+        print({key: dict[key]})
+        list.sort(reverse=True, key=sort_on)
+    return list
+
+
+def print_stats(path, words, chars):
+    print("============ BOOKBOT ============")
+    print(f"Analyzing book found at {path}...")
+    print("----------- Word Count ----------")
+    print(f"Found {words} total words")
+    print("--------- Character Count -------")
+    for char in chars:
+        for key in char:
+            if key.isalpha():
+                print(f"{key}: {char[key]}")
