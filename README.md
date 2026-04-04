@@ -24,7 +24,7 @@ cd alphacount
 Make the program executable:
 
 ```bash
-chmod +x alphacount
+chmod +x alphacount.py
 ```
 
 Run:
