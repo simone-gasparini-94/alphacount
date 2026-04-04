@@ -12,7 +12,7 @@ Command-line tool that displays the frequency breakdown of every alphabetical ch
 Clone this repository:
 
 ```bash
-git clone https://github.com/simone-gasparini-94/alphacount.git
+git clone https://github.com/s-gas/alphacount.git
 ```
 
 Change to the project directory:
@@ -30,5 +30,5 @@ chmod +x alphacount
 Run:
 
 ```bash
-./alphacount <path/to/file.txt>
+./alphacount.py <path/to/file.txt>
 ```
