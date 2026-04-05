@@ -30,5 +30,9 @@ chmod +x alphacount.py
 Run:
 
 ```bash
-./alphacount.py <path/to/file.txt>
+./alphacount.py [options] <path/to/file.txt>
 ```
+
+## Options
+
+- `-c CHAR`: Count occurences of a specific letter

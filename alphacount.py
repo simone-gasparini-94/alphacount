@@ -19,11 +19,11 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("file")
-    parser.add_argument("-c")
+    parser.add_argument("-c", metavar="CHAR")
     args = parser.parse_args()
     try:
         text = get_text(args.file)
-        num_chars = get_num_of_chars(text)
+        num_chars = get_num_of_chars(text, args.c)
         char_list = convert_dict_to_list(num_chars)
         print_stats(char_list)
     except Exception as e:
