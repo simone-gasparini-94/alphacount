@@ -3,7 +3,7 @@
 
 ## Description
 
-Command-line tool that displays the frequency breakdown of every alphabetical character in a text file, sorted in descending order.
+Command-line tool that displays the frequency breakdown of every alphabetical character in a text file, sorted by default in descending order.
 
 ## How to run
 
@@ -36,5 +36,6 @@ Run:
 ### Options
 
 - `-h`: Show help message and exit
-- `-c CHAR`: Count occurences of a specific letter
+- `-c CHAR`: Count occurences of a specific alphabetic character
 - `-r`: Sort in ascending order
+- `-n COUNT`: Display the top COUNT alphabetic characters

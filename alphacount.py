@@ -24,7 +24,10 @@ def main():
     )
     parser.add_argument("-r", action="store_true", help="sort in ascending order")
     parser.add_argument(
-        "-n", metavar="INT", type=int, help="display only the top N results"
+        "-n",
+        metavar="COUNT",
+        type=int,
+        help="display the top COUNT alphabetic characters",
     )
     args = parser.parse_args()
     try:
