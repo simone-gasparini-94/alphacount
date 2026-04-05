@@ -35,4 +35,6 @@ Run:
 
 ### Options
 
+- `-h`: Show help message and exit
 - `-c CHAR`: Count occurences of a specific letter
+- `-r`: Sort in ascending order
