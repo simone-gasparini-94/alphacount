@@ -33,6 +33,6 @@ Run:
 ./alphacount.py [options] <path/to/file.txt>
 ```
 
-## Options
+### Options
 
 - `-c CHAR`: Count occurences of a specific letter

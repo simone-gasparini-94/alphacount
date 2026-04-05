@@ -16,10 +16,12 @@ def get_text(path):
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(usage="alphacount.py [options] <file>")
 
     parser.add_argument("file")
-    parser.add_argument("-c", metavar="CHAR")
+    parser.add_argument(
+        "-c", metavar="CHAR", help="count occurences of a specific alphabetic character"
+    )
     args = parser.parse_args()
     try:
         text = get_text(args.file)
