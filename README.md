@@ -1,7 +1,7 @@
 
 # alphacount
 
-## Description
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
 Command-line tool that displays the frequency breakdown of every alphabetical character in a text file, sorted by default in descending order.
 
